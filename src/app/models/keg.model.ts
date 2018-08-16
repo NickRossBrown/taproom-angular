@@ -1,5 +1,5 @@
 export class Keg {
-  public qty: number = 124;
+  public qty: number = 2;
 
   constructor(public name: string, public brand: string, public price: number, public abv: number) {}
 
@@ -20,6 +20,4 @@ export class Keg {
   sellPint() {
     this.qty--;
   }
-
-  
 }

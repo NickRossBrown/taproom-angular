@@ -16,7 +16,7 @@ export class KegListComponent {
   }
 
   sellButtonClicked(kegToSell: Keg) {
-    kegToSell.sellPint();
+    if (kegToSell.qty > 0) kegToSell.sellPint();
   }
 
   deleteButtonClicked(kegToDelete: Keg) {
