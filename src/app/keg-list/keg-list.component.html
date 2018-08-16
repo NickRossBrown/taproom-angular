@@ -10,8 +10,8 @@
   <div class="grid-group" *ngFor="let keg of kegList">
     <div class="grid-item">{{ keg.name }}</div>
     <div class="grid-item">{{ keg.brand }}</div>
-    <div class="grid-item">{{ keg.price }}</div>
-    <div class="grid-item">{{ keg.abv }}</div>
+    <div class="grid-item"><span [class]="getColorForPrice(keg)">${{ keg.price }}</span></div>
+    <div class="grid-item">{{ keg.abv }}%</div>
     <div class="grid-item">{{ keg.qty }}</div>
     <div class="grid-item">
       <button class="btn btn-med btn-default btn-option" (click)="editButtonClicked(keg)">

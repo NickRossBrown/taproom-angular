@@ -22,4 +22,11 @@ export class KegListComponent {
   deleteButtonClicked(kegToDelete: Keg) {
     Keg.deleteKeg(kegToDelete);
   }
+
+  getColorForPrice(keg: Keg) {
+    let color: string = '';
+    keg.price <= 5 ? color = 'green' : color = 'blue';
+
+    return color;
+  }
 }
