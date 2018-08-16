@@ -5,12 +5,19 @@
       <div class="grid-item">Brand</div>
       <div class="grid-item">Price</div>
       <div class="grid-item">ABV</div>
+      <div class="grid-item">Pints Left</div>
+      <div class="grid-item">Options</div>
     </div>
     <div class="grid-group" *ngFor="let keg of kegList">
       <div class="grid-item">{{ keg.name }}</div>
       <div class="grid-item">{{ keg.brand }}</div>
       <div class="grid-item">{{ keg.price }}</div>
       <div class="grid-item">{{ keg.abv }}</div>
+      <div class="grid-item">{{ keg.qty }}</div>
+      <div class="grid-item">
+        <button class="btn btn-lg btn-default" (click)="editButtonClicked(keg)">Edit Keg</button>
+        <button class="btn btn-lg btn-default">Sell Pint</button>
+      </div>
     </div>
   </div>
 </div>

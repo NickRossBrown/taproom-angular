@@ -1,4 +1,6 @@
 export class Keg {
+  public qty: number = 124;
+
   constructor(public name: string, public brand: string, public price: number, public abv: number) {}
 
   static kegList: Keg[] = [

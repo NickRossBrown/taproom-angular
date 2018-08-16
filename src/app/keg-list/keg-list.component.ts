@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { Keg } from '../models/keg.model';
 
 @Component({
@@ -8,5 +8,11 @@ import { Keg } from '../models/keg.model';
 })
 
 export class KegListComponent {
+  @Output() editClickSender = new EventEmitter();
+
   kegList = Keg.kegList;
+
+  editButtonClicked(kegtoEdit: Keg) {
+    this.editClickSender.emit(kegtoEdit);
+  }
 }

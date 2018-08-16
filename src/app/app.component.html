@@ -1,6 +1,7 @@
 <div class="container">
   <h1>Epicodus Taproom</h1>
   <app-new-keg></app-new-keg>
-  <app-keg-list></app-keg-list>
+  <app-keg-list (editClickSender)="editKeg($event)"></app-keg-list>
+  <app-edit-tap [selectedKeg]="selectedKeg" (clickedDone)="finishedEditing()"></app-edit-tap>
 </div>
 

@@ -8,5 +8,9 @@ import { Keg } from './models/keg.model';
 })
 
 export class AppComponent {
-  
+  selectedKeg = null;
+
+  editKeg(clickedKeg) {
+    this.selectedKeg = clickedKeg;
+  }
 }

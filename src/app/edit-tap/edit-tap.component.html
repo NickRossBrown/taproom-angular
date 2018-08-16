@@ -1,0 +1,24 @@
+<div *ngIf="selectedKeg">
+  <h3>Edit Keg</h3>
+  <div class="form-group">
+    <label>Name:</label>
+    <input [(ngModel)]="selectedKeg.name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Brand:</label>
+    <input [(ngModel)]="selectedKeg.brand" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Price:</label>
+    <input [(ngModel)]="selectedKeg.price" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>ABV:</label>
+    <input [(ngModel)]="selectedKeg.abv" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>QTY:</label>
+    <input [(ngModel)]="selectedKeg.qty" class="form-control">
+  </div>
+  <button class="btn btn-lg btn-default" (click)="finishedEditing">Done</button>
+</div>
