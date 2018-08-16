@@ -1,4 +1,4 @@
-<button class="btn btn-lg btn-default btn-add" (click)="newButtonClicked()">
+<button class="btn btn-lg btn-default btn-add" (click)="showHideNewForm()">
   <fa name="plus"></fa>
   Add Keg
 </button>
@@ -26,4 +26,5 @@
     newName.value=''; newBrand.value=''; newPrice.value=''; newAbv.value='';">
     Add
   </button>
+  <button class="btn btn-lg btn-default" (click)="showHideNewForm()">Cancel</button>
 </div>
