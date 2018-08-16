@@ -9,10 +9,13 @@ import { Keg } from '../models/keg.model';
 
 export class KegListComponent {
   @Output() editClickSender = new EventEmitter();
-
   kegList = Keg.kegList;
 
-  editButtonClicked(kegtoEdit: Keg) {
-    this.editClickSender.emit(kegtoEdit);
+  editButtonClicked(kegToEdit: Keg) {
+    this.editClickSender.emit(kegToEdit);
+  }
+
+  sellButtonClicked(kegToSell: Keg) {
+    kegToSell.sellPint();
   }
 }

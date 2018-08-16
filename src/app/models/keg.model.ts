@@ -11,4 +11,8 @@ export class Keg {
   static addKeg(keg: Keg) {
     Keg.kegList.push(keg);
   }
+
+  sellPint() {
+    this.qty--;
+  }
 }

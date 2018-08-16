@@ -1,4 +1,7 @@
-<button class="btn btn-lg btn-default" (click)="newButtonClicked()">Add Keg</button>
+<button class="btn btn-lg btn-default btn-add" (click)="newButtonClicked()">
+  <fa name="plus"></fa>
+  Add Keg
+</button>
 <div *ngIf="showNewForm">
   <h3>New Keg</h3>
   <div class="form-group">

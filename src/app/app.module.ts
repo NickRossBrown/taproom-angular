@@ -5,6 +5,7 @@ import { NewKegComponent } from './new-keg/new-keg.component';
 import { KegListComponent } from './keg-list/keg-list.component';
 import { EditTapComponent } from './edit-tap/edit-tap.component';
 import { FormsModule } from '@angular/forms';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

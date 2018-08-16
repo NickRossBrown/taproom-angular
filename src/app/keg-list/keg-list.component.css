@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: auto;
   grid-gap: 10px;
-  background-color: #41cfd6;
   padding: 10px;
 }
 
@@ -10,13 +9,21 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
-  background-color: #41cfd6;
   padding: 10px;
+  border-bottom: 1px solid #444;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
+  font-size: 20px;
+}
+
+.grid-header {
   font-size: 30px;
+}
+
+.btn-option {
+  margin: 5px 0px;
 }
