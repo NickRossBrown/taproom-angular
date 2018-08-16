@@ -12,7 +12,12 @@
     <div class="grid-item">{{ keg.brand }}</div>
     <div class="grid-item"><span [class]="getColorForPrice(keg)">${{ keg.price }}</span></div>
     <div class="grid-item">{{ keg.abv }}%</div>
-    <div class="grid-item">{{ keg.qty }}</div>
+    <div class="grid-item">
+      {{ keg.qty }}
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" [style.width]="getPercentageWidth(keg) + '%'" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">{{ keg.percentRemaining() }}%</div>
+      </div>
+    </div>
     <div class="grid-item">
       <button class="btn btn-med btn-default btn-option" (click)="editButtonClicked(keg)">
         <fa name="edit"></fa>

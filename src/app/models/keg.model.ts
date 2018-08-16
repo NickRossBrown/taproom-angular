@@ -20,4 +20,9 @@ export class Keg {
   sellPint() {
     this.qty--;
   }
+
+  percentRemaining() {
+    const percentage = (this.qty / 124) * 100;
+    return percentage.toFixed(0);
+  }
 }

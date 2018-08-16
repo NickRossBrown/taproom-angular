@@ -29,4 +29,9 @@ export class KegListComponent {
 
     return color;
   }
+
+  getPercentageWidth(keg: Keg) {
+    const percentage = keg.percentRemaining();
+    return percentage;
+  }
 }
