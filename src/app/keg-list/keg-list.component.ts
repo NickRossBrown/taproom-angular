@@ -18,4 +18,8 @@ export class KegListComponent {
   sellButtonClicked(kegToSell: Keg) {
     kegToSell.sellPint();
   }
+
+  deleteButtonClicked(kegToDelete: Keg) {
+    Keg.deleteKeg(kegToDelete);
+  }
 }

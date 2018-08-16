@@ -12,7 +12,14 @@ export class Keg {
     Keg.kegList.push(keg);
   }
 
+  static deleteKeg(keg: Keg) {
+    const kegPosition: number = Keg.kegList.indexOf(keg);
+    Keg.kegList.splice(kegPosition, 1);
+  }
+
   sellPint() {
     this.qty--;
   }
+
+  
 }
