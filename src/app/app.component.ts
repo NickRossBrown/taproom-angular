@@ -8,7 +8,5 @@ import { Keg } from './models/keg.model';
 })
 
 export class AppComponent {
-  addKeg(newKeg: Keg) {
-    Keg.addKeg(newKeg);
-  }
+  
 }

@@ -17,5 +17,10 @@
     <label>ABV:</label>
     <input #newAbv class="form-control">
   </div>
-  <button class="btn btn-lg btn-default" (click)="submitForm(newDescription.value, newPriority.value); newDescription.value='';">Add</button>
+  <button
+    class="btn btn-lg btn-default"
+    (click)="submitForm(newName.value, newBrand.value, newPrice.value, newAbv.value);
+    newName.value=''; newBrand.value=''; newPrice.value=''; newAbv.value='';">
+    Add
+  </button>
 </div>

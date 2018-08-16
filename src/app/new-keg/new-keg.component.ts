@@ -19,4 +19,8 @@ export class NewKegComponent {
   newButtonClicked() {
     this.showNewForm = !this.showNewForm;
   }
+
+  addKeg(newKeg: Keg) {
+    Keg.addKeg(newKeg);
+  }
 }

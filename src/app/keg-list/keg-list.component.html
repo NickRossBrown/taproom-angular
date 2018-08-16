@@ -1,0 +1,16 @@
+<div>
+  <div class="grid-container">
+    <div class="grid-group">
+      <div class="grid-item">Name</div>
+      <div class="grid-item">Brand</div>
+      <div class="grid-item">Price</div>
+      <div class="grid-item">ABV</div>
+    </div>
+    <div class="grid-group" *ngFor="let keg of kegList">
+      <div class="grid-item">{{ keg.name }}</div>
+      <div class="grid-item">{{ keg.brand }}</div>
+      <div class="grid-item">{{ keg.price }}</div>
+      <div class="grid-item">{{ keg.abv }}</div>
+    </div>
+  </div>
+</div>
