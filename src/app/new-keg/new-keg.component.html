@@ -1,0 +1,21 @@
+<button class="btn btn-lg btn-default" (click)="newButtonClicked()">Add Keg</button>
+<div *ngIf="showNewForm">
+  <h3>New Keg</h3>
+  <div class="form-group">
+    <label>Name:</label>
+    <input #newName class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Brand:</label>
+    <input #newBrand class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Price:</label>
+    <input #newPrice class="form-control">
+  </div>
+  <div class="form-group">
+    <label>ABV:</label>
+    <input #newAbv class="form-control">
+  </div>
+  <button class="btn btn-lg btn-default" (click)="submitForm(newDescription.value, newPriority.value); newDescription.value='';">Add</button>
+</div>

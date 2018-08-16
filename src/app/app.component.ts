@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Keg } from './models/keg.model';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  
+  addKeg(newKeg: Keg) {
+    Keg.addKeg(newKeg);
+  }
 }

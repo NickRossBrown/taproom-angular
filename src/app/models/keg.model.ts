@@ -1,6 +1,6 @@
 const _kegList = [];
 export class Keg {
-  constructor(public name: string, public brand: string, public price: string, public abv: string) {}
+  constructor(public name: string, public brand: string, public price: number, public abv: number) {}
 
   static getKegList() { return _kegList; }
 
