@@ -3,7 +3,7 @@
   Add Keg
 </button>
 <div *ngIf="showNewForm">
-  <h3>New Keg</h3>
+  <h3 class="light-shadow">New Keg</h3>
   <div class="form-group">
     <label>Name:</label>
     <input #newName class="form-control">
@@ -24,7 +24,11 @@
     class="btn btn-lg btn-default"
     (click)="submitForm(newName.value, newBrand.value, newPrice.value, newAbv.value);
     newName.value=''; newBrand.value=''; newPrice.value=''; newAbv.value='';">
+    <fa name="plus"></fa>
     Add
   </button>
-  <button class="btn btn-lg btn-default" (click)="showHideNewForm()">Cancel</button>
+  <button class="btn btn-lg btn-default" (click)="showHideNewForm()">
+    <fa name="ban"></fa>
+    Cancel
+  </button>
 </div>

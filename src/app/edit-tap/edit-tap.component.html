@@ -1,5 +1,5 @@
 <div *ngIf="selectedKeg" id="edit-form">
-  <h3>Edit Keg</h3>
+  <h3 class="light-shadow">Edit Keg</h3>
   <div class="form-group">
     <label>Name:</label>
     <input [(ngModel)]="selectedKeg.name" class="form-control" autofocus="true">
@@ -20,5 +20,8 @@
     <label>Qty:</label>
     <input [(ngModel)]="selectedKeg.qty" class="form-control">
   </div>
-  <button class="btn btn-lg btn-default" (click)="finishedEditing()">Done</button>
+  <button class="btn btn-lg btn-default" (click)="finishedEditing()">
+    <fa name="check-circle"></fa>
+    Done
+  </button>
 </div>
