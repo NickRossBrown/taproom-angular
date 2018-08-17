@@ -1,8 +1,8 @@
-<div *ngIf="selectedKeg">
+<div *ngIf="selectedKeg" id="edit-form">
   <h3>Edit Keg</h3>
   <div class="form-group">
     <label>Name:</label>
-    <input [(ngModel)]="selectedKeg.name" class="form-control">
+    <input [(ngModel)]="selectedKeg.name" class="form-control" autofocus="true">
   </div>
   <div class="form-group">
     <label>Brand:</label>
@@ -10,14 +10,14 @@
   </div>
   <div class="form-group">
     <label>Price:</label>
-    <input [(ngModel)]="selectedKeg.price" class="form-control">
+    <input type="number" [(ngModel)]="selectedKeg.price" class="form-control">
   </div>
   <div class="form-group">
     <label>ABV:</label>
-    <input [(ngModel)]="selectedKeg.abv" class="form-control">
+    <input type="number" [(ngModel)]="selectedKeg.abv" class="form-control">
   </div>
   <div class="form-group">
-    <label>QTY:</label>
+    <label>Qty:</label>
     <input [(ngModel)]="selectedKeg.qty" class="form-control">
   </div>
   <button class="btn btn-lg btn-default" (click)="finishedEditing()">Done</button>
