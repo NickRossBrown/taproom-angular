@@ -1,8 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
+body {
+	font-family: 'Indie Flower', cursive;
+}
+
+.light-shadow {
+	text-shadow: 1px 1px 0px #44444496;
+}
+
 .btn-default {
 	border: 1px solid #444;
 	transition: 0.5s;
+	font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .btn-default:hover {

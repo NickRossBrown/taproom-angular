@@ -1,11 +1,11 @@
 <div class="grid-container">
-  <div class="grid-group">
-    <div class="grid-item grid-header">Name</div>
-    <div class="grid-item grid-header">Brand</div>
-    <div class="grid-item grid-header">Price</div>
-    <div class="grid-item grid-header">ABV</div>
-    <div class="grid-item grid-header">Pints Left</div>
-    <div class="grid-item grid-header">Options</div>
+  <div class="grid-group grid-group-header">
+    <div class="grid-item grid-header light-shadow">Name</div>
+    <div class="grid-item grid-header light-shadow">Brand</div>
+    <div class="grid-item grid-header light-shadow">Price</div>
+    <div class="grid-item grid-header light-shadow">ABV</div>
+    <div class="grid-item grid-header light-shadow">Pints Left</div>
+    <div class="grid-item grid-header light-shadow">Options</div>
   </div>
   <div class="grid-group" *ngFor="let keg of kegList">
     <div class="grid-item">{{ keg.name }}</div>
