@@ -1,6 +1,6 @@
-# Online Music Store
+# Taproom
 
-#### Epicodus Angular homework, 08.19.18 - 8.23.18
+#### Epicodus Angular assignment, 8.16.18
 
 #### By Abel Trotter & Thad Donaghue
 
